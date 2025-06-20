@@ -1,0 +1,10 @@
+image: alpine:latest
+pages:
+  scripts:
+    - mkdir public
+    - cp index.html app.py public/
+  artifacts:
+    paths:
+      - "public"
+  only:
+    - main
